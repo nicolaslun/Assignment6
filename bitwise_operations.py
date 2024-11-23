@@ -1,6 +1,7 @@
 import sys
 
-user_inputs = sys.argv[1:]
+user_inputs = sys.argv[1:-1]
+threshold = int(sys.argv[-1])
 
 try:
     numbers = [int(value) for value in user_inputs]
